@@ -17,6 +17,9 @@ class ListsController < ApplicationController
       render :new
     end
   end
+
+  def troll
+  end
   
   private
 

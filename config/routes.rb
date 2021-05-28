@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   end
   resources :bookmarks, only: [ :destroy ]
   resources :movies, only: [ :index, :show ]
+
+  get "/troll", to: 'lists#troll', as: :troll
 end

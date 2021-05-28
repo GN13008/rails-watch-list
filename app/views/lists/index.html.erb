@@ -9,7 +9,9 @@
 <br>
 <div class="cards">
   <% @lists.each do |list| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1640&q=80);)">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1542204625-ca960ca44635?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3900&q=80);)">
+      <%# <%= cl_image_tag("okjps7hknqbsktzfy6ma", width: 400, height: 300, crop: :fill) %>
+      
       <%= link_to ("<i class=\"fas fa-search\"></i>").html_safe, list_path(list) %>
       <%= list.name %>
     </div>
